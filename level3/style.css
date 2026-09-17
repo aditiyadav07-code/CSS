@@ -3,6 +3,8 @@
     height: 100px;
     background-color: green;
     font-size:10px;
+    display: inline;
+    position: static;
 }
 
 #box2 {
@@ -12,6 +14,10 @@
     background-color: yellow;
     font-size:2em;
     width:5em;
+    display: inline;
+    position: relative;
+    top:20px;
+    left:10px;
 }
 
 #box3 {
@@ -21,12 +27,32 @@
     background-color:brown;
     font-size:2em;
     width:5rem;
+    display: inline;
+    position: absolute;
+    top:0px;
+    right:20px;
 }
 
 #box4 {
     margin-left:10%;
-    height: 100vh;
+    height: 30vh;
     background-color:brown;
     font-size:2em;
-    width:100vw;
+    width:50vw;
+    display: inline;
+    position: fixed;
+    right:10px;
+    bottom:20px;
+}
+
+#box5 {
+    margin-left:10%;
+    height: 30vh;
+    background-color:brown;
+    font-size:2em;
+    width:50vw;
+    display: inline;
+    position: sticky;
+    top:0px;
+    left:20px;
 }
