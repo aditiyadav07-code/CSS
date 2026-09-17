@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Level 03</title>
+    <link rel="stylesheet" href="/level3/style.css">
 </head>
 <body>
-    
+    Hello
+    <div id="box1">
+        box1
+        <div id="box2">
+            box2
+        </div>
+        <div id="box3">
+            box3
+        </div>
+        <div id="box4">
+            box4
+        </div>
+    </div>
 </body>
 </html>
 <!-- 
 absolute units -> px, cm, mm, inch
-relative units -> % => width:33%, margin-left:50%
+relative units -> % => width:33% 
+               -> % of taking parents width, margin-left:50%
+               eg: parent->width=100px & child->width:33% => child->width:33px
+
+               -> em =>changes relative to font-size of parent (can be font-size or width,etc.)
+               eg: if parent=> font-size : 10px then child=>font-size:2em = 10*2=20px
+               then => width:5em = 20*5=100px;
+               some depends on parent font-size and some element
+
+               -> rem => relative to font size of root element(html)
+
+               -> vh => relative to 1% viewport height (browser height)
+               -> vw => relative to 1% viewport width (browser width)
+
+by default font-size in body (random/not inside tags) => 16px
 -->
