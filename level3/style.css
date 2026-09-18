@@ -31,6 +31,8 @@
     position: absolute;
     top:0px;
     right:20px;
+    background-image:url(/level3/butterfly.png);
+    background-size:auto;
 }
 
 #box4 {
@@ -43,6 +45,8 @@
     position: fixed;
     right:10px;
     bottom:20px;
+    background-image:url(/level3/butterfly.png);
+    background-size:cover;
 }
 
 #box5 {
@@ -55,4 +59,34 @@
     position: sticky;
     top:0px;
     left:20px;
+}
+
+#box6 {
+    width: 5rem;
+    height: 50px;
+    background-color: brown;
+    font-size: 2em;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    z-index:1;
+}
+
+#box7 {
+    width: 5rem;
+    height: 50px;
+    background-color:cyan;
+    font-size: 2em;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    z-index:-3;
+}
+
+body {
+    background-image:url(/level3/butterfly.png);
+    background-size:contain;
+    background-repeat:no-repeat;
 }
