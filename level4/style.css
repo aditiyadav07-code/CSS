@@ -3,15 +3,15 @@ body {
 }
 
 div {
-    height:50px;
-    width:50px;
+    height:100px;
+    width:150px;
     display:inline-block;
     border:2px solid black;
 }
 
 #container {
-    width:800px;
-    height:200px;
+    width:600px;
+    height:600px;
 
     display:flex;
 
@@ -22,9 +22,16 @@ div {
 
     justify-content:flex-start;
     justify-content:flex-end;
-    justify-content:center;
     justify-content:space-around;
     justify-content:space-evenly;
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    align-content:center;
+    align-content:flex-start;
 }
 
 #box1 {
@@ -33,10 +40,12 @@ div {
 
 #box2 {
     background-color:pink;
+    height:200px;
 }
 
 #box3 {
     background-color:darkkhaki;
+    height:75px;
 }
 
 #box4 {
