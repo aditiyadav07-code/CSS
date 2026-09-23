@@ -4,13 +4,13 @@ body {
 
 div {
     height:100px;
-    width:200px;
+    width:50px;
     display:inline-block;
     border:2px solid black;
 }
 
 #container {
-    width:600px;
+    width:700px;
     height:300px;
 
     display:flex;
@@ -38,12 +38,15 @@ div {
 
 #box1 {
     background-color:aqua;
+    flex-grow:1;
 }
 
 #box2 {
     background-color:pink;
     height:200px;
-    align-self:flex-end;
+    /* align-self:flex-end; */
+    flex-shrink:2;
+    flex-grow:1;
 }
 
 #box3 {
