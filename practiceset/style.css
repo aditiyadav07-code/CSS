@@ -1,15 +1,30 @@
-div{
+.navbar{
     background-color:pink;
     display:flex;
+    justify-content:space-evenly;
 }
 
 a{
     text-decoration: none;
-    color:black;
-    background-color: beige;
+    color:white;
 }
 
 li{
     list-style-type:none;
-    display: inline;
+    background-color: brown;
+}
+
+.outer {
+    height:400px;
+    width:400px;
+    background-color:chartreuse;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.inner {
+    height:100px;
+    width:100px;
+    background-color:coral;
 }

@@ -25,4 +25,53 @@ FLEXBOX-
    coloumn(T TO B),column-reverse (B TO T)
    flex direction-> main axis, opp. direction-> cross axis
    ->even tho big size,won't go out of container
+
+Level 4 cheat sheet :
+
+Flex container
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+Flex item
+.item {
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+Media query
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+The core mental model is: FLEXBOX
+Parent
+  │
+  ├── display: flex
+  ├── flex-direction → direction
+  ├── justify-content → main axis
+  ├── align-items → cross axis
+  ├── flex-wrap → multiple lines
+  └── align-content → multiple-line alignment
+
+Children
+  │
+  ├── align-self → individual alignment
+  ├── flex-grow → use extra space
+  └── flex-shrink → handle insufficient space
+
+And the two rules worth memorizing immediately:
+justify-content = main axis
+align-items = cross axis
+
+Then:
+Media query = "if the screen meets this condition, change these CSS rules."
 -->
