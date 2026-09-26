@@ -7,7 +7,7 @@
     border-radius: 50%;
     background-color:antiquewhite;
 
-    animation: loading 3s ease-in 0s infinite normal;
+    animation: loading 1s ease-in-out 0s infinite normal;
 }
 
 @keyframes loading {
